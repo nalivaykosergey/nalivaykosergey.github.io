@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Nalivayko S.M.</title>
-    <link>https://nalivaykosergey.github.io/</link>
-      <atom:link href="https://nalivaykosergey.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <description>Nalivayko S.M.</description>
+    <title>Books | Nalivayko S.M.</title>
+    <link>https://nalivaykosergey.github.io/category/books/</link>
+      <atom:link href="https://nalivaykosergey.github.io/category/books/index.xml" rel="self" type="application/rss+xml" />
+    <description>Books</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 15 May 2020 18:58:57 +0300</lastBuildDate>
     <image>
       <url>https://nalivaykosergey.github.io/images/icon_hu416371339788729138e0e33e9fa81cd1_1373_512x512_fill_lanczos_center_2.png</url>
-      <title>Nalivayko S.M.</title>
-      <link>https://nalivaykosergey.github.io/</link>
+      <title>Books</title>
+      <link>https://nalivaykosergey.github.io/category/books/</link>
     </image>
     
     <item>
@@ -30,30 +30,6 @@
 Книга пропитана субъективизмом. Меня это отталкивает. Отбросив  субъективное восприятие
 можно докопаться до истины, чего, мне кажется, не получилось у Кори Пайна.&lt;/p&gt;
 &lt;p&gt;Субъективная оценка: 4/10.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>О чем? Для чего?</title>
-      <link>https://nalivaykosergey.github.io/post/hello/</link>
-      <pubDate>Fri, 15 May 2020 18:01:11 +0300</pubDate>
-      <guid>https://nalivaykosergey.github.io/post/hello/</guid>
-      <description>&lt;p&gt;Первый пост. Труднее всего начать писать. О чем? Для чего? Важно выбрать тему, которая будет интересна не только мне, но и тем, кто посетит мой сайт.&lt;/p&gt;
-&lt;p&gt;Время — ценнейший невосполнимый ресурс человека, поэтому нужно делать такой контент, на который человек будет готов потратить крупицу своей жизни.
-Начнем за здравие, а дальше как пойдет.
-Основные темы, которые я буду описывать в постах:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Вещи, которые мне показались интересными в области, которую я изучаю (программирование, математика);&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Книги, которые я прочел и могу посоветовать или наоборот, попросить вас никогда их не покупать (техническая литература, художественная);&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Рекомендации статей, которые мне понравились.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Надеюсь, вам будет здесь интересно. Спасибо за внимание.&lt;/p&gt;
 </description>
     </item>
     
