@@ -3,17 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://nalivaykosergey.github.io/talk/predator-prey-model-talk/</loc>
+    <lastmod>2020-06-20T13:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nalivaykosergey.github.io/</loc>
+    <lastmod>2020-06-20T13:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nalivaykosergey.github.io/talk/</loc>
+    <lastmod>2020-06-20T13:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nalivaykosergey.github.io/tag/mathematical-model/</loc>
+    <lastmod>2020-05-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nalivaykosergey.github.io/project/predator-prey-model/</loc>
+    <lastmod>2020-05-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nalivaykosergey.github.io/project/</loc>
+    <lastmod>2020-05-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nalivaykosergey.github.io/tags/</loc>
+    <lastmod>2020-05-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nalivaykosergey.github.io/category/books/</loc>
     <lastmod>2020-05-15T18:58:57+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://nalivaykosergey.github.io/categories/</loc>
-    <lastmod>2020-05-15T18:58:57+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nalivaykosergey.github.io/</loc>
     <lastmod>2020-05-15T18:58:57+03:00</lastmod>
   </url>
   
@@ -33,6 +63,16 @@
   </url>
   
   <url>
+    <loc>https://nalivaykosergey.github.io/slides/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nalivaykosergey.github.io/slides/predator-prey-model-slides/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nalivaykosergey.github.io/authors/</loc>
   </url>
   
@@ -46,14 +86,6 @@
   
   <url>
     <loc>https://nalivaykosergey.github.io/publication/</loc>
-  </url>
-  
-  <url>
-    <loc>https://nalivaykosergey.github.io/talk/</loc>
-  </url>
-  
-  <url>
-    <loc>https://nalivaykosergey.github.io/tags/</loc>
   </url>
   
 </urlset>

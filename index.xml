@@ -5,7 +5,7 @@
     <link>https://nalivaykosergey.github.io/</link>
       <atom:link href="https://nalivaykosergey.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Nalivayko S.M.</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 15 May 2020 18:58:57 +0300</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 20 Jun 2020 13:30:00 +0000</lastBuildDate>
     <image>
       <url>https://nalivaykosergey.github.io/images/icon_hu416371339788729138e0e33e9fa81cd1_1373_512x512_fill_lanczos_center_2.png</url>
       <title>Nalivayko S.M.</title>
@@ -13,11 +13,43 @@
     </image>
     
     <item>
+      <title>Building a predator-prey model</title>
+      <link>https://nalivaykosergey.github.io/talk/predator-prey-model-talk/</link>
+      <pubDate>Sat, 20 Jun 2020 13:30:00 +0000</pubDate>
+      <guid>https://nalivaykosergey.github.io/talk/predator-prey-model-talk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Predator-Prey Model</title>
+      <link>https://nalivaykosergey.github.io/project/predator-prey-model/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://nalivaykosergey.github.io/project/predator-prey-model/</guid>
+      <description>&lt;p&gt;The simplest model of interaction of two types of &amp;ldquo;predator - prey&amp;rdquo; -
+Lotka-Volterra model. This two-species model is based on
+the following assumptions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The population numbers of prey x and predators y depend only on time
+(the model does not take into account the spatial distribution of the population by
+occupied territory)&lt;/li&gt;
+&lt;li&gt;In the absence of interaction, the number of species changes by the model
+Malthus, with the number of prey increasing and the number of predators falling.&lt;/li&gt;
+&lt;li&gt;Natural mortality of the prey and natural birth rate of the predator
+are considered insignificant&lt;/li&gt;
+&lt;li&gt;The saturation effect of both populations is not considered&lt;/li&gt;
+&lt;li&gt;The rate of increase in the number of prey decreases proportionally
+predator abundances&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Details coming soon&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Кори Пайн: Живи, вкалывай, сдохни. Репортаж с темной стороны Кремниевой долины</title>
       <link>https://nalivaykosergey.github.io/post/book1/</link>
       <pubDate>Fri, 15 May 2020 18:58:57 +0300</pubDate>
       <guid>https://nalivaykosergey.github.io/post/book1/</guid>
-      <description>&lt;p&gt;&lt;img class=&#34;special-img-class&#34; src=&#34;https://nalivaykosergey.github.io/img/coreypein.jpg&#34; width = 350 align = left /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img class=&#34;special-img-class&#34; src=&#34;https://nalivaykosergey.github.io/img/books/coreypein.jpg&#34; width = 350 align = left /&gt;&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;Желтая пресса, которую даже The New York Times не допустит в печать&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;Многих техно-гиков манит Кремниевая долина, даже тех, кто ни разу не гик и даже не техно. Все наслышаны об этой колыбели инноваций. Там творится история, там свершаются настоящие подвиги. В общем, рай на Земле, а люди там- добрые самаритяне, которые делают нашу жизнь лучше изо дня в день. «Мы делаем этот мир лучше»: заявляют нам со сцены.
 Вдохновленный речами президентов корпораций, да и от части, ради желания обогатить свой карман парой лишних миллионов долларов, Кори Пайн отправляется покорять Калифорнию. Что из этого получилось? Правильно, сборник рассказов обиженного мальчика, именуемый как «Живи, вкалывай, сдохни». Долина его не приняла.&lt;/p&gt;
@@ -54,6 +86,51 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Надеюсь, вам будет здесь интересно. Спасибо за внимание.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>https://nalivaykosergey.github.io/slides/predator-prey-model-slides/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://nalivaykosergey.github.io/slides/predator-prey-model-slides/</guid>
+      <description>&lt;h1 id=&#34;predator-prey-model&#34;&gt;Predator-prey model&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;model-model-description&#34;&gt;Model. Model description.&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;The simplest model of interaction of two types of &amp;ldquo;predator - prey&amp;rdquo; -
+Lotka-Volterra model. This two-species model is based on
+the following assumptions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The population numbers of prey x and predators y depend only on time&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the absence of interaction, the number of species changes by the model
+Malthus, with the number of prey increasing and the number of predators falling.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Natural mortality of the prey and natural birth rate of the predator
+are considered insignificant&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The saturation effect of both populations is not considered&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The rate of increase in the number of prey decreases proportionally
+predator abundances&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;In this model, x is the number of prey, y is the number of predators.&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;special-img-class&#34; src=&#34;https://nalivaykosergey.github.io/img/predator-prey model slides img/model.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Evolution of the prey population and
+predators in the Lotka-Volterra model&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;details-coming-soon&#34;&gt;Details coming soon&amp;hellip;&lt;/h3&gt;
 </description>
     </item>
     
