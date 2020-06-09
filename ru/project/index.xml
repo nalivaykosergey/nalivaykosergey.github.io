@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | Наливайко С.М.</title>
+    <link>https://nalivaykosergey.github.io/ru/project/</link>
+      <atom:link href="https://nalivaykosergey.github.io/ru/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© 2020 Nalivayko S. M.</copyright><lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://nalivaykosergey.github.io/images/icon_hu416371339788729138e0e33e9fa81cd1_1373_512x512_fill_lanczos_center_2.png</url>
+      <title>Projects</title>
+      <link>https://nalivaykosergey.github.io/ru/project/</link>
+    </image>
+    
+    <item>
+      <title>Модель хищник-жертва</title>
+      <link>https://nalivaykosergey.github.io/ru/project/predator-prey-model/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://nalivaykosergey.github.io/ru/project/predator-prey-model/</guid>
+      <description>&lt;h2 id=&#34;описание-модели&#34;&gt;Описание модели&lt;/h2&gt;
+&lt;p&gt;Простейшая модель взаимодействия двух видов типа «хищник — жертва» -
+модель Лотки-Вольтерры. Данная двувидовая модель основывается на
+следующих предположениях:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Численность популяции жертв x и хищников y зависят только от времени
+(модель не учитывает пространственное распределение популяции на
+занимаемой территории);&lt;/li&gt;
+&lt;li&gt;В отсутствии взаимодействия численность видов изменяется по модели
+Мальтуса, при этом число жертв увеличивается, а число хищников падает;&lt;/li&gt;
+&lt;li&gt;Естественная смертность жертвы и естественная рождаемость хищника
+считаются несущественными;&lt;/li&gt;
+&lt;li&gt;Эффект насыщения численности обеих популяций не учитывается.&lt;/li&gt;
+&lt;li&gt;Скорость роста численности жертв уменьшается пропорционально численности хищников.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+\frac{dx}{dt} = -ax(t) + bx(t)y(t)
+$$&lt;/p&gt;
+&lt;p&gt;$$\frac{dy}{dt} = cy(t) - dx(t)y(t)$$&lt;/p&gt;
+&lt;p&gt;В этой модели x – число жертв, y - число хищников. Коэффициент a описывает скорость естественного прироста числа жертв в отсутствие хищников, с - естественное вымирание хищников, лишенных пищи в виде жертв. Вероятность взаимодействия жертвы и хищника считается пропорциональной как количеству жертв так и числу самих хищников (xy). Каждый акт взаимодействия уменьшает популяцию жертв, но способствует увеличению популяции хищников (члены -bxy и dxy в правой части уравнения).&lt;/p&gt;
+&lt;h2 id=&#34;задание&#34;&gt;Задание:&lt;/h2&gt;
+&lt;p&gt;В лесу проживают х число волков, питающихся зайцами, число которых в
+этом же лесу у. Пока число зайцев достаточно велико, для прокормки всех волков,
+численность волков растет до тех пор, пока не наступит момент, что корма
+перестанет хватать на всех. Тогда волки начнут умирать, и их численность будет
+уменьшаться. В этом случае в какой-то момент времени численность зайцев снова
+начнет увеличиваться, что повлечет за собой новый рост популяции волков. Такой
+цикл будет повторяться, пока обе популяции будут существовать. Помимо этого,
+на численность стаи влияют болезни и старение. Данная модель описывается
+следующим уравнением:&lt;/p&gt;
+&lt;p&gt;$$
+\frac{dx}{dt} = -ax(t) + bx(t)y(t)
+$$&lt;/p&gt;
+&lt;p&gt;$$\frac{dy}{dt} = cy(t) - dx(t)y(t)$$&lt;/p&gt;
+&lt;p&gt;$a, d$ - коэффициенты смертности&lt;/p&gt;
+&lt;p&gt;$b, c$ - коэффициенты прироста популяции&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Построить график зависимости $x$ от $y$ и графики функций $x(t)$ от $y(t)$&lt;/li&gt;
+&lt;li&gt;Найти стационарное состояние системы.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;решение&#34;&gt;Решение&lt;/h2&gt;
+&lt;p&gt;Ссылка на github : 
+&lt;a href=&#34;https://github.com/nalivaykosergey/predator-prey-model&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ссылка&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;вывод&#34;&gt;Вывод&lt;/h2&gt;
+&lt;p&gt;&lt;img class=&#34;special-img-class&#34; src=&#34;https://nalivaykosergey.github.io/img/predator-prey model slides img/output.png&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

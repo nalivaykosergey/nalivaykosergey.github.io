@@ -5,7 +5,7 @@
     <link>https://nalivaykosergey.github.io/project/</link>
       <atom:link href="https://nalivaykosergey.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Nalivayko S. M.</copyright><lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://nalivaykosergey.github.io/images/icon_hu416371339788729138e0e33e9fa81cd1_1373_512x512_fill_lanczos_center_2.png</url>
       <title>Projects</title>
@@ -17,7 +17,8 @@
       <link>https://nalivaykosergey.github.io/project/predator-prey-model/</link>
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       <guid>https://nalivaykosergey.github.io/project/predator-prey-model/</guid>
-      <description>&lt;p&gt;The simplest model of interaction of two types of &amp;ldquo;predator - prey&amp;rdquo; -
+      <description>&lt;h2 id=&#34;model-description&#34;&gt;Model description&lt;/h2&gt;
+&lt;p&gt;The simplest model of interaction of two types of &amp;ldquo;predator - prey&amp;rdquo; -
 Lotka-Volterra model. This two-species model is based on
 the following assumptions:&lt;/p&gt;
 &lt;ul&gt;
@@ -32,7 +33,28 @@ are considered insignificant&lt;/li&gt;
 &lt;li&gt;The rate of increase in the number of prey decreases proportionally
 predator abundances&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Details coming soon&amp;hellip;&lt;/p&gt;
+&lt;p&gt;$$
+\frac{dx}{dt} = -ax(t) + bx(t)y(t)
+$$&lt;/p&gt;
+&lt;p&gt;$$\frac{dy}{dt} = cy(t) - dx(t)y(t)$$&lt;/p&gt;
+&lt;p&gt;In this model, x is the number of victims and y is the number of predators. Coefficient a describes the rate of natural increase in the number of victims in the absence of predators, C-the natural extinction of predators deprived of food in the form of victims. The probability of interaction between a victim and a predator is calculated in proportion to both the number of victims and the number of predators themselves (xy). Each interaction reduces the population of prey, but increases the population of predators (the members are bsa and dxy on the right side of the equation).&lt;/p&gt;
+&lt;h2 id=&#34;task&#34;&gt;Task:&lt;/h2&gt;
+&lt;p&gt;In the forest live x number of wolves eating hares, the number of which in the same forest y. As long as the number of hares is large enough to feed all wolves, the number of wolves grows until the time comes that the food is no longer enough for all. Then the wolves will start dying and their numbers will decrease. In this case, at some point the number of hares will start to increase again, which will lead to a new growth of the wolf population. This cycle will be repeated as long as both populations exist. In addition, the number of flocks is affected by disease and aging. This model is described with the following equation:&lt;/p&gt;
+&lt;p&gt;$$
+\frac{dx}{dt} = -ax(t) + bx(t)y(t)
+$$&lt;/p&gt;
+&lt;p&gt;$$\frac{dy}{dt} = cy(t) - dx(t)y(t)$$&lt;/p&gt;
+&lt;p&gt;$a, d$ - mortality rate&lt;/p&gt;
+&lt;p&gt;$b, c$ - population growth rates&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Plot the dependence of $x$ on $y$ and graphs of functions $x(t)$ from $y(t)$&lt;/li&gt;
+&lt;li&gt;Find the stationary state of the system.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
+&lt;p&gt;Link to github : 
+&lt;a href=&#34;https://github.com/nalivaykosergey/predator-prey-model&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;output&#34;&gt;Output&lt;/h2&gt;
+&lt;p&gt;&lt;img class=&#34;special-img-class&#34; src=&#34;https://nalivaykosergey.github.io/img/predator-prey model slides img/output.png&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

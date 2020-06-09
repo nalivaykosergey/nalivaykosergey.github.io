@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors | Наливайко С.М.</title>
+    <link>https://nalivaykosergey.github.io/ru/authors/</link>
+      <atom:link href="https://nalivaykosergey.github.io/ru/authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Authors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© 2020 Nalivayko S. M.</copyright>
+    <image>
+      <url>https://nalivaykosergey.github.io/images/icon_hu416371339788729138e0e33e9fa81cd1_1373_512x512_fill_lanczos_center_2.png</url>
+      <title>Authors</title>
+      <link>https://nalivaykosergey.github.io/ru/authors/</link>
+    </image>
+    
+  </channel>
+</rss>

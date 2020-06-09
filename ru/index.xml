@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Наливайко С.М.</title>
+    <link>https://nalivaykosergey.github.io/ru/</link>
+      <atom:link href="https://nalivaykosergey.github.io/ru/index.xml" rel="self" type="application/rss+xml" />
+    <description>Наливайко С.М.</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© 2020 Nalivayko S. M.</copyright><lastBuildDate>Sat, 20 Jun 2020 13:30:00 +0000</lastBuildDate>
+    <image>
+      <url>https://nalivaykosergey.github.io/images/icon_hu416371339788729138e0e33e9fa81cd1_1373_512x512_fill_lanczos_center_2.png</url>
+      <title>Наливайко С.М.</title>
+      <link>https://nalivaykosergey.github.io/ru/</link>
+    </image>
+    
+    <item>
+      <title>Построение модели хищник-жертва</title>
+      <link>https://nalivaykosergey.github.io/ru/talk/predator-prey-model-talk/</link>
+      <pubDate>Sat, 20 Jun 2020 13:30:00 +0000</pubDate>
+      <guid>https://nalivaykosergey.github.io/ru/talk/predator-prey-model-talk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Модель хищник-жертва</title>
+      <link>https://nalivaykosergey.github.io/ru/project/predator-prey-model/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://nalivaykosergey.github.io/ru/project/predator-prey-model/</guid>
+      <description>&lt;h2 id=&#34;описание-модели&#34;&gt;Описание модели&lt;/h2&gt;
+&lt;p&gt;Простейшая модель взаимодействия двух видов типа «хищник — жертва» -
+модель Лотки-Вольтерры. Данная двувидовая модель основывается на
+следующих предположениях:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Численность популяции жертв x и хищников y зависят только от времени
+(модель не учитывает пространственное распределение популяции на
+занимаемой территории);&lt;/li&gt;
+&lt;li&gt;В отсутствии взаимодействия численность видов изменяется по модели
+Мальтуса, при этом число жертв увеличивается, а число хищников падает;&lt;/li&gt;
+&lt;li&gt;Естественная смертность жертвы и естественная рождаемость хищника
+считаются несущественными;&lt;/li&gt;
+&lt;li&gt;Эффект насыщения численности обеих популяций не учитывается.&lt;/li&gt;
+&lt;li&gt;Скорость роста численности жертв уменьшается пропорционально численности хищников.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+\frac{dx}{dt} = -ax(t) + bx(t)y(t)
+$$&lt;/p&gt;
+&lt;p&gt;$$\frac{dy}{dt} = cy(t) - dx(t)y(t)$$&lt;/p&gt;
+&lt;p&gt;В этой модели x – число жертв, y - число хищников. Коэффициент a описывает скорость естественного прироста числа жертв в отсутствие хищников, с - естественное вымирание хищников, лишенных пищи в виде жертв. Вероятность взаимодействия жертвы и хищника считается пропорциональной как количеству жертв так и числу самих хищников (xy). Каждый акт взаимодействия уменьшает популяцию жертв, но способствует увеличению популяции хищников (члены -bxy и dxy в правой части уравнения).&lt;/p&gt;
+&lt;h2 id=&#34;задание&#34;&gt;Задание:&lt;/h2&gt;
+&lt;p&gt;В лесу проживают х число волков, питающихся зайцами, число которых в
+этом же лесу у. Пока число зайцев достаточно велико, для прокормки всех волков,
+численность волков растет до тех пор, пока не наступит момент, что корма
+перестанет хватать на всех. Тогда волки начнут умирать, и их численность будет
+уменьшаться. В этом случае в какой-то момент времени численность зайцев снова
+начнет увеличиваться, что повлечет за собой новый рост популяции волков. Такой
+цикл будет повторяться, пока обе популяции будут существовать. Помимо этого,
+на численность стаи влияют болезни и старение. Данная модель описывается
+следующим уравнением:&lt;/p&gt;
+&lt;p&gt;$$
+\frac{dx}{dt} = -ax(t) + bx(t)y(t)
+$$&lt;/p&gt;
+&lt;p&gt;$$\frac{dy}{dt} = cy(t) - dx(t)y(t)$$&lt;/p&gt;
+&lt;p&gt;$a, d$ - коэффициенты смертности&lt;/p&gt;
+&lt;p&gt;$b, c$ - коэффициенты прироста популяции&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Построить график зависимости $x$ от $y$ и графики функций $x(t)$ от $y(t)$&lt;/li&gt;
+&lt;li&gt;Найти стационарное состояние системы.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;решение&#34;&gt;Решение&lt;/h2&gt;
+&lt;p&gt;Ссылка на github : 
+&lt;a href=&#34;https://github.com/nalivaykosergey/predator-prey-model&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ссылка&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;вывод&#34;&gt;Вывод&lt;/h2&gt;
+&lt;p&gt;&lt;img class=&#34;special-img-class&#34; src=&#34;https://nalivaykosergey.github.io/img/predator-prey model slides img/output.png&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Кори Пайн: Живи, вкалывай, сдохни. Репортаж с темной стороны Кремниевой долины</title>
+      <link>https://nalivaykosergey.github.io/ru/post/book1/</link>
+      <pubDate>Fri, 15 May 2020 18:58:57 +0300</pubDate>
+      <guid>https://nalivaykosergey.github.io/ru/post/book1/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;special-img-class&#34; src=&#34;https://nalivaykosergey.github.io/img/books/coreypein.jpg&#34; width = 350 align = left /&gt;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Желтая пресса, которую даже The New York Times не допустит в печать&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Многих техно-гиков манит Кремниевая долина, даже тех, кто ни разу не гик и даже не техно. Все наслышаны об этой колыбели инноваций. Там творится история, там свершаются настоящие подвиги. В общем, рай на Земле, а люди там- добрые самаритяне, которые делают нашу жизнь лучше изо дня в день. «Мы делаем этот мир лучше»: заявляют нам со сцены.
+Вдохновленный речами президентов корпораций, да и от части, ради желания обогатить свой карман парой лишних миллионов долларов, Кори Пайн отправляется покорять Калифорнию. Что из этого получилось? Правильно, сборник рассказов обиженного мальчика, именуемый как «Живи, вкалывай, сдохни». Долина его не приняла.&lt;/p&gt;
+&lt;p&gt;Со страниц книги нам вещают о том, что баллом долины заправляют деньги, что никто не думает о простых людях, руководствуясь лишь собственной наживой, о том, что люди вынуждены сидеть без работы, довольствуясь контрактами с компаниями, которые были заключены по безграмотности и многое-многое другое.&lt;/p&gt;
+&lt;p&gt;Цитата из книги:
+«Я начинал понимать, что технологический бум был не кладезем возможностей, а мотором, который превращал пенсионные фонды беби-бумеров в канапе и выпивку для миллениалов посредством маркетинговых бюджетов стартапов, обеспеченных венчурным капиталом. Здорово, конечно, но я не мог избавиться от чувства, что за всем этим кроется нечто гораздо более угрожающее. Неужели мы были ягнятами, которых откармливали лишь затем, чтобы отправить на
+убой?»&lt;/p&gt;
+&lt;p&gt;Если хотя бы крупица истины в его словах присутствует, то это лучшее снимание розовых очков с глаз либеральной общественности, которое только можно представить.
+Интересно было прочесть про национализм среди глав компаний. А об их маниакальном желании продлить себе жизнь с помощью биохакинга вообще можно промолчать.
+Книга пропитана субъективизмом. Меня это отталкивает. Отбросив  субъективное восприятие
+можно докопаться до истины, чего, мне кажется, не получилось у Кори Пайна.&lt;/p&gt;
+&lt;p&gt;Субъективная оценка: 4/10.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>О чем? Для чего?</title>
+      <link>https://nalivaykosergey.github.io/ru/post/hello/</link>
+      <pubDate>Fri, 15 May 2020 18:01:11 +0300</pubDate>
+      <guid>https://nalivaykosergey.github.io/ru/post/hello/</guid>
+      <description>&lt;p&gt;Первый пост. Труднее всего начать писать. О чем? Для чего? Важно выбрать тему, которая будет интересна не только мне, но и тем, кто посетит мой сайт.&lt;/p&gt;
+&lt;p&gt;Время — ценнейший невосполнимый ресурс человека, поэтому нужно делать такой контент, на который человек будет готов потратить крупицу своей жизни.
+Начнем за здравие, а дальше как пойдет.
+Основные темы, которые я буду описывать в постах:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Вещи, которые мне показались интересными в области, которую я изучаю (программирование, математика);&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Книги, которые я прочел и могу посоветовать или наоборот, попросить вас никогда их не покупать (техническая литература, художественная);&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cтатьи, которые мне понравились.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Надеюсь, вам будет здесь интересно. Спасибо за внимание.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>https://nalivaykosergey.github.io/ru/slides/predator-prey-model-slides/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://nalivaykosergey.github.io/ru/slides/predator-prey-model-slides/</guid>
+      <description>&lt;h1 id=&#34;predator-prey-model&#34;&gt;Predator-prey model&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;model-model-description&#34;&gt;Model. Model description.&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;The simplest model of interaction of two types of &amp;ldquo;predator - prey&amp;rdquo; -
+Lotka-Volterra model. This two-species model is based on
+the following assumptions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The population numbers of prey x and predators y depend only on time&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the absence of interaction, the number of species changes by the model
+Malthus, with the number of prey increasing and the number of predators falling.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Natural mortality of the prey and natural birth rate of the predator
+are considered insignificant&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The saturation effect of both populations is not considered&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The rate of increase in the number of prey decreases proportionally
+predator abundances&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;In this model, x is the number of prey, y is the number of predators.&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;special-img-class&#34; src=&#34;https://nalivaykosergey.github.io/img/predator-prey model slides img/model.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Evolution of the prey population and
+predators in the Lotka-Volterra model&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;algorithm&#34;&gt;Algorithm.&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;Our predator-prey model has only two initial states:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Stationary state (Figure 1, point A)&lt;/li&gt;
+&lt;li&gt;The state having a deviation from the stationary one (Figure 1, point B)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img class=&#34;special-img-class&#34; src=&#34;https://nalivaykosergey.github.io/img/predator-prey model slides img/figuresAB.png&#34; /&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;with-a-small-change-in-the-model-the-following-happens&#34;&gt;With a small change in the model, the following happens:&lt;/h3&gt;
+&lt;p&gt;$$
+\frac{dx}{dt} = -ax(t) + bx(t)y(t)
+$$&lt;/p&gt;
+&lt;p&gt;$$\frac{dy}{dt} = cy(t) - dx(t)y(t)$$&lt;/p&gt;
+&lt;p&gt;Here x - number of preys, y - number of predators. a - ratio of natural mortality of predators, b - ratio of natural increase in preys, c - ratio of increase in predators, d - ratio of mortality of preys.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Scheme:&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;special-img-class&#34; src=&#34;https://nalivaykosergey.github.io/img/predator-prey model slides img/scheme.png&#34; /&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;software-solution&#34;&gt;Software solution.&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img width = &#34;600&#34; class=&#34;special-img-class&#34; src=&#34;https://nalivaykosergey.github.io/img/predator-prey model slides img/octave.png&#34; /&gt;&lt;/p&gt;
+&lt;p style = &#34;float:right&#34;&gt;To solve this problem, we used the system for mathematical calculations gnu octave. GNU Octave is a free system for mathematical calculations, using a high-level MATLAB-compatible language.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;code&#34;&gt;Code.&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-MATHLAB&#34;&gt;set(figure,&#39;Name&#39;,&#39;Lotka-Volterra models of Predator-Prey Relationships&#39;,&#39;NumberTitle&#39;,&#39;off&#39;)
+
+function dx=f(x,t)
+	dx(1) = -0.2*x(1) + 0.05*x(1)*x(2);
+	dx(2) = 0.5*x(2) - 0.02*x(1)*x(2);
+endfunction
+
+
+x0=[5;10]; 
+t = [0: 0.1: 400];
+y = lsode(&amp;quot;f&amp;quot;, x0, t);
+y1 = y(:, 1);
+y2 = y(:, 2);
+
+sPoint = [ 0.5/0.02; 0.2/0.05 ]
+
+subplot(2,2, 1:2);
+  	hold on
+  	plot(sPoint(1),sPoint(2), &#39;o&#39;)
+	plot(y1, y2, &amp;quot;linewidth&amp;quot;, 1 , &#39;m&#39;);
+  	legend(&amp;quot;Stationary point&amp;quot;, &amp;quot;LotkaVolterra equations&amp;quot;)
+	xlabel(&amp;quot;Predators&amp;quot;);
+	ylabel(&amp;quot;Preys&amp;quot;);
+	title(&amp;quot;Predator-Prey model&amp;quot;);
+subplot (2, 2, 3);
+	plot(t, y1, &amp;quot;linewidth&amp;quot;, 1 , &#39;g&#39;);
+	xlabel(&amp;quot;Time&amp;quot;);
+	ylabel(&amp;quot;Number of predators&amp;quot;);
+	title(&amp;quot;Number of changes predator populations&amp;quot;);
+subplot (2, 2, 4);
+	plot(t, y2, &amp;quot;linewidth&amp;quot;, 1 , &#39;c&#39;);
+	xlabel(&amp;quot;Time&amp;quot;);
+	ylabel(&amp;quot;Number of preys&amp;quot;);
+	title(&amp;quot;Number of changes prey populations&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -138,7 +138,120 @@ predators in the Lotka-Volterra model</p>
     <section>
     
       
-<h3 id="details-coming-soon">Details coming soon&hellip;</h3>
+<h2 id="algorithm">Algorithm.</h2>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>Our predator-prey model has only two initial states:</p>
+<ol>
+<li>Stationary state (Figure 1, point A)</li>
+<li>The state having a deviation from the stationary one (Figure 1, point B)</li>
+</ol>
+<p><img class="special-img-class" src="/img/predator-prey model slides img/figuresAB.png" /></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="with-a-small-change-in-the-model-the-following-happens">With a small change in the model, the following happens:</h3>
+<p>$$
+\frac{dx}{dt} = -ax(t) + bx(t)y(t)
+$$</p>
+<p>$$\frac{dy}{dt} = cy(t) - dx(t)y(t)$$</p>
+<p>Here x - number of preys, y - number of predators. a - ratio of natural mortality of predators, b - ratio of natural increase in preys, c - ratio of increase in predators, d - ratio of mortality of preys.</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>Scheme:</p>
+<p><img class="special-img-class" src="/img/predator-prey model slides img/scheme.png" /></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="software-solution">Software solution.</h2>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p><img width = "600" class="special-img-class" src="/img/predator-prey model slides img/octave.png" /></p>
+<p style = "float:right">To solve this problem, we used the system for mathematical calculations gnu octave. GNU Octave is a free system for mathematical calculations, using a high-level MATLAB-compatible language.</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="code">Code.</h3>
+<pre><code class="language-MATHLAB">set(figure,'Name','Lotka-Volterra models of Predator-Prey Relationships','NumberTitle','off')
+
+function dx=f(x,t)
+	dx(1) = -0.2*x(1) + 0.05*x(1)*x(2);
+	dx(2) = 0.5*x(2) - 0.02*x(1)*x(2);
+endfunction
+
+
+x0=[5;10]; 
+t = [0: 0.1: 400];
+y = lsode(&quot;f&quot;, x0, t);
+y1 = y(:, 1);
+y2 = y(:, 2);
+
+sPoint = [ 0.5/0.02; 0.2/0.05 ]
+
+subplot(2,2, 1:2);
+  	hold on
+  	plot(sPoint(1),sPoint(2), 'o')
+	plot(y1, y2, &quot;linewidth&quot;, 1 , 'm');
+  	legend(&quot;Stationary point&quot;, &quot;LotkaVolterra equations&quot;)
+	xlabel(&quot;Predators&quot;);
+	ylabel(&quot;Preys&quot;);
+	title(&quot;Predator-Prey model&quot;);
+subplot (2, 2, 3);
+	plot(t, y1, &quot;linewidth&quot;, 1 , 'g');
+	xlabel(&quot;Time&quot;);
+	ylabel(&quot;Number of predators&quot;);
+	title(&quot;Number of changes predator populations&quot;);
+subplot (2, 2, 4);
+	plot(t, y2, &quot;linewidth&quot;, 1 , 'c');
+	xlabel(&quot;Time&quot;);
+	ylabel(&quot;Number of preys&quot;);
+	title(&quot;Number of changes prey populations&quot;);
+</code></pre>
 
     </section>
     

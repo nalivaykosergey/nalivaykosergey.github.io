@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Slides | Наливайко С.М.</title>
+    <link>https://nalivaykosergey.github.io/ru/slides/</link>
+      <atom:link href="https://nalivaykosergey.github.io/ru/slides/index.xml" rel="self" type="application/rss+xml" />
+    <description>Slides</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© 2020 Nalivayko S. M.</copyright><lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Slides</title>
+      <link>https://nalivaykosergey.github.io/ru/slides/predator-prey-model-slides/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://nalivaykosergey.github.io/ru/slides/predator-prey-model-slides/</guid>
+      <description>&lt;h1 id=&#34;predator-prey-model&#34;&gt;Predator-prey model&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;model-model-description&#34;&gt;Model. Model description.&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;The simplest model of interaction of two types of &amp;ldquo;predator - prey&amp;rdquo; -
+Lotka-Volterra model. This two-species model is based on
+the following assumptions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The population numbers of prey x and predators y depend only on time&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the absence of interaction, the number of species changes by the model
+Malthus, with the number of prey increasing and the number of predators falling.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Natural mortality of the prey and natural birth rate of the predator
+are considered insignificant&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The saturation effect of both populations is not considered&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The rate of increase in the number of prey decreases proportionally
+predator abundances&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;In this model, x is the number of prey, y is the number of predators.&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;special-img-class&#34; src=&#34;https://nalivaykosergey.github.io/img/predator-prey model slides img/model.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Evolution of the prey population and
+predators in the Lotka-Volterra model&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;algorithm&#34;&gt;Algorithm.&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;Our predator-prey model has only two initial states:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Stationary state (Figure 1, point A)&lt;/li&gt;
+&lt;li&gt;The state having a deviation from the stationary one (Figure 1, point B)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img class=&#34;special-img-class&#34; src=&#34;https://nalivaykosergey.github.io/img/predator-prey model slides img/figuresAB.png&#34; /&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;with-a-small-change-in-the-model-the-following-happens&#34;&gt;With a small change in the model, the following happens:&lt;/h3&gt;
+&lt;p&gt;$$
+\frac{dx}{dt} = -ax(t) + bx(t)y(t)
+$$&lt;/p&gt;
+&lt;p&gt;$$\frac{dy}{dt} = cy(t) - dx(t)y(t)$$&lt;/p&gt;
+&lt;p&gt;Here x - number of preys, y - number of predators. a - ratio of natural mortality of predators, b - ratio of natural increase in preys, c - ratio of increase in predators, d - ratio of mortality of preys.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Scheme:&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;special-img-class&#34; src=&#34;https://nalivaykosergey.github.io/img/predator-prey model slides img/scheme.png&#34; /&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;software-solution&#34;&gt;Software solution.&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img width = &#34;600&#34; class=&#34;special-img-class&#34; src=&#34;https://nalivaykosergey.github.io/img/predator-prey model slides img/octave.png&#34; /&gt;&lt;/p&gt;
+&lt;p style = &#34;float:right&#34;&gt;To solve this problem, we used the system for mathematical calculations gnu octave. GNU Octave is a free system for mathematical calculations, using a high-level MATLAB-compatible language.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;code&#34;&gt;Code.&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-MATHLAB&#34;&gt;set(figure,&#39;Name&#39;,&#39;Lotka-Volterra models of Predator-Prey Relationships&#39;,&#39;NumberTitle&#39;,&#39;off&#39;)
+
+function dx=f(x,t)
+	dx(1) = -0.2*x(1) + 0.05*x(1)*x(2);
+	dx(2) = 0.5*x(2) - 0.02*x(1)*x(2);
+endfunction
+
+
+x0=[5;10]; 
+t = [0: 0.1: 400];
+y = lsode(&amp;quot;f&amp;quot;, x0, t);
+y1 = y(:, 1);
+y2 = y(:, 2);
+
+sPoint = [ 0.5/0.02; 0.2/0.05 ]
+
+subplot(2,2, 1:2);
+  	hold on
+  	plot(sPoint(1),sPoint(2), &#39;o&#39;)
+	plot(y1, y2, &amp;quot;linewidth&amp;quot;, 1 , &#39;m&#39;);
+  	legend(&amp;quot;Stationary point&amp;quot;, &amp;quot;LotkaVolterra equations&amp;quot;)
+	xlabel(&amp;quot;Predators&amp;quot;);
+	ylabel(&amp;quot;Preys&amp;quot;);
+	title(&amp;quot;Predator-Prey model&amp;quot;);
+subplot (2, 2, 3);
+	plot(t, y1, &amp;quot;linewidth&amp;quot;, 1 , &#39;g&#39;);
+	xlabel(&amp;quot;Time&amp;quot;);
+	ylabel(&amp;quot;Number of predators&amp;quot;);
+	title(&amp;quot;Number of changes predator populations&amp;quot;);
+subplot (2, 2, 4);
+	plot(t, y2, &amp;quot;linewidth&amp;quot;, 1 , &#39;c&#39;);
+	xlabel(&amp;quot;Time&amp;quot;);
+	ylabel(&amp;quot;Number of preys&amp;quot;);
+	title(&amp;quot;Number of changes prey populations&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

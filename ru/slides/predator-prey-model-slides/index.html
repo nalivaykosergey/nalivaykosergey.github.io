@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru-ru">
+<head>
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  <link rel="manifest" href="/ru/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu416371339788729138e0e33e9fa81cd1_1373_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu416371339788729138e0e33e9fa81cd1_1373_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://nalivaykosergey.github.io/ru/slides/predator-prey-model-slides/">
+
+  <title>Slides | Наливайко С.М.</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/black.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous">
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/reveal_custom.min.css">
+
+  
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/css/print/pdf.css' : 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+
+</head>
+<body>
+
+  
+<div class="reveal">
+  <div class="slides">
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    <section>
+    
+      <h1 id="predator-prey-model">Predator-prey model</h1>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="model-model-description">Model. Model description.</h2>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>The simplest model of interaction of two types of &ldquo;predator - prey&rdquo; -
+Lotka-Volterra model. This two-species model is based on
+the following assumptions:</p>
+<ol>
+<li>
+<p>The population numbers of prey x and predators y depend only on time</p>
+</li>
+<li>
+<p>In the absence of interaction, the number of species changes by the model
+Malthus, with the number of prey increasing and the number of predators falling.</p>
+</li>
+</ol>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<ol start="3">
+<li>
+<p>Natural mortality of the prey and natural birth rate of the predator
+are considered insignificant</p>
+</li>
+<li>
+<p>The saturation effect of both populations is not considered</p>
+</li>
+<li>
+<p>The rate of increase in the number of prey decreases proportionally
+predator abundances</p>
+</li>
+</ol>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>In this model, x is the number of prey, y is the number of predators.</p>
+<p><img class="special-img-class" src="/img/predator-prey model slides img/model.png" /></p>
+<p>Evolution of the prey population and
+predators in the Lotka-Volterra model</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="algorithm">Algorithm.</h2>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>Our predator-prey model has only two initial states:</p>
+<ol>
+<li>Stationary state (Figure 1, point A)</li>
+<li>The state having a deviation from the stationary one (Figure 1, point B)</li>
+</ol>
+<p><img class="special-img-class" src="/img/predator-prey model slides img/figuresAB.png" /></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="with-a-small-change-in-the-model-the-following-happens">With a small change in the model, the following happens:</h3>
+<p>$$
+\frac{dx}{dt} = -ax(t) + bx(t)y(t)
+$$</p>
+<p>$$\frac{dy}{dt} = cy(t) - dx(t)y(t)$$</p>
+<p>Here x - number of preys, y - number of predators. a - ratio of natural mortality of predators, b - ratio of natural increase in preys, c - ratio of increase in predators, d - ratio of mortality of preys.</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>Scheme:</p>
+<p><img class="special-img-class" src="/img/predator-prey model slides img/scheme.png" /></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="software-solution">Software solution.</h2>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p><img width = "600" class="special-img-class" src="/img/predator-prey model slides img/octave.png" /></p>
+<p style = "float:right">To solve this problem, we used the system for mathematical calculations gnu octave. GNU Octave is a free system for mathematical calculations, using a high-level MATLAB-compatible language.</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="code">Code.</h3>
+<pre><code class="language-MATHLAB">set(figure,'Name','Lotka-Volterra models of Predator-Prey Relationships','NumberTitle','off')
+
+function dx=f(x,t)
+	dx(1) = -0.2*x(1) + 0.05*x(1)*x(2);
+	dx(2) = 0.5*x(2) - 0.02*x(1)*x(2);
+endfunction
+
+
+x0=[5;10]; 
+t = [0: 0.1: 400];
+y = lsode(&quot;f&quot;, x0, t);
+y1 = y(:, 1);
+y2 = y(:, 2);
+
+sPoint = [ 0.5/0.02; 0.2/0.05 ]
+
+subplot(2,2, 1:2);
+  	hold on
+  	plot(sPoint(1),sPoint(2), 'o')
+	plot(y1, y2, &quot;linewidth&quot;, 1 , 'm');
+  	legend(&quot;Stationary point&quot;, &quot;LotkaVolterra equations&quot;)
+	xlabel(&quot;Predators&quot;);
+	ylabel(&quot;Preys&quot;);
+	title(&quot;Predator-Prey model&quot;);
+subplot (2, 2, 3);
+	plot(t, y1, &quot;linewidth&quot;, 1 , 'g');
+	xlabel(&quot;Time&quot;);
+	ylabel(&quot;Number of predators&quot;);
+	title(&quot;Number of changes predator populations&quot;);
+subplot (2, 2, 4);
+	plot(t, y2, &quot;linewidth&quot;, 1 , 'c');
+	xlabel(&quot;Time&quot;);
+	ylabel(&quot;Number of preys&quot;);
+	title(&quot;Number of changes prey populations&quot;);
+</code></pre>
+
+    </section>
+    
+
+    
+    
+  </div>
+</div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.min.js"></script>
+
+  <script>
+    window.revealPlugins = { dependencies: [
+      
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/zoom-js/zoom.js', async: true },
+      
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/math/math.js', async: true },
+      
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/print-pdf/print-pdf.js', async: true },
+      
+      { src: '\/js\/vendor\/reveal.js\/plugin\/notes\/notes.js', async: true }
+    ]};
+
+    let revealDefaults = { center: true, controls: true, history: true, progress: true, transition: 'slide', mouseWheel: true };
+    let revealOptions = Object.assign({}, revealDefaults, revealPlugins);
+    Reveal.initialize(revealOptions);
+  </script>
+
+</body>
+</html>
